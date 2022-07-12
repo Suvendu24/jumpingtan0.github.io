@@ -8,12 +8,13 @@ function calcTime(){
     diff/=1000;
     return diff;}
 function jump(){
-    if (character.classList!="animate")
-    character.classList.add("animate");
+    if (character.classList.contains("animate")){pass}
+    else{character.classList.add("animate");
     setTimeout(function(){  
             character.classList.remove("animate")
 
-    },500);
+    },500); }
+    
 }
 function sart(){
     Start= new Date();
